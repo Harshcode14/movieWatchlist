@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="./movie.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Smythe&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>My Watchlist</h1>
+    <a href="./index.html">Search for movies</a>
+    <!-- <div class="search-bar" id="watch-search">
+    <i class="fa-solid fa-search search-icon" ></i>
+    <input type="text" placeholder="Enter movie name..">
+    <button id="search-watchlist">Search</button>
+</div> -->
+</header>
+<main>
+    <section id="watchlist" class="movies">
+    </section>
+<div class="empty-watchlist" id="empty-watchlist">
+    <h3>Your watchlist is looking a little empty...</h3>
+    <div>
+        <i class="fa-solid fa-plus-circle "></i>
+        <p>Let’s add some movies!</p>
+    </div>
+</div>
+<p class="modal-message none" id="modal-message">Removed!</p>
+</main>
+<script src="./watchlist.js"></script>
+</body>
+</html>
