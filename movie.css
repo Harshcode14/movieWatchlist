@@ -190,3 +190,26 @@ hr{
     font-weight:700;
     border-radius: 5px;
 }
+@media(max-width:1024px){
+
+    header{
+       flex-direction: column;
+        justify-content: center;
+       height:60vh;
+    }
+
+   
+    .search-bar{
+        display:grid;
+        width:100%;
+        margin-left:0;
+        margin-right:0;
+        grid-template-columns: auto 1fr auto;
+    }   
+    .explore{
+        margin-top:auto;
+        margin-bottom:auto;
+        top:0px;
+        bottom:0px;
+    } 
+}
