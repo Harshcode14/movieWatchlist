@@ -27,7 +27,7 @@ display:flex;
 align-items: center;
 justify-content: space-around;
  background-image: url("./titleImage.png");
- height:40vh;
+ /* height:40vh; */
 background-size: cover;
 background-color: rgba(0,0,0,0.7);
 background-blend-mode: multiply;
@@ -195,21 +195,34 @@ hr{
     header{
        flex-direction: column;
         justify-content: center;
-       height:60vh;
+       height:min-content;
+       height: min-content;
+        padding: 1.5em 1em; /* ✅ add padding */
+        gap: 1em;
     }
-
+input {
+        width: 100%; /* takes full grid column */
+    }
    
     .search-bar{
-        display:grid;
+        /* display:grid;
         width:100%;
         margin-left:0;
         margin-right:0;
-        grid-template-columns: auto 1fr auto;
-    }   
-    .explore{
+        grid-template-columns: auto 1fr auto; */
+         position: static; /* ✅ remove absolute positioning on mobile */
+        margin-bottom: -45px;
+         width: 100%;
+        /* bottom: 0; */
+    }
+
+    /* .explore{
         margin-top:auto;
         margin-bottom:auto;
         top:0px;
         bottom:0px;
-    } 
+    }  */
+    .movies{
+        margin: 70px 5vw;
+    }
 }
