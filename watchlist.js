@@ -12,7 +12,7 @@
 function renderWatchlist(){
     watchlist.innerHTML=""
     savedMovies.forEach(id=>{
-        fetch(`https://www.omdbapi.com/?i=${id}&apikey=f141fda`)
+        fetch(`https://www.omdbapi.com/?i=${id}&apikey=5dc8f3a0`)
 .then(res=>res.json())
 .then(data=>{
     watchlist.innerHTML+=

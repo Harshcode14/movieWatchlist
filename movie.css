@@ -218,7 +218,9 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-
+.movies{
+    margin:70px 3vw;
+}
 
 
 }
