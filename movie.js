@@ -17,13 +17,13 @@ document.getElementById("searchMovie").addEventListener("click",function(){
 
 function renderMovies(name){
     movieCard.innerHTML=""
-fetch(`https://www.omdbapi.com/?s="${name}"&apikey=f141fda`)
+fetch(`https://www.omdbapi.com/?s="${name}"&apikey=5dc8f3a0`)
 .then(res=>res.json())
 .then(data=>{ 
     if (data.Search){
         searchFail.classList.add("none")
         data.Search.forEach(obj=>{ 
-fetch(`https://www.omdbapi.com/?i=${obj.imdbID}&apikey=f141fda`)
+fetch(`https://www.omdbapi.com/?i=${obj.imdbID}&apikey=5dc8f3a0`)
 .then(res=>res.json())
 .then(data=>{
     movieCard.innerHTML+=
